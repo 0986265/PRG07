@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="Project" target="" />
+      <module name="Project" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>
