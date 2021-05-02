@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Bike:");
         Bike.drive(9.9f);
 
-        System.out.println("Opdracht 7:");
+        System.out.println("Opdracht 7 & 8:");
         System.out.println("Tandem:");
         Tandem tandem = new Tandem();
         Tandem.tandemDrive(4);
@@ -36,6 +36,12 @@ public class Main {
         Ebike.ebikeDrive(2);
         Ebike.setBattery(0);
         Ebike.ebikeDrive(2);
+
+        System.out.println("Opdracht 9:");
+        System.out.println("Een static method kan worden aangeroepen zonder instance. Bij een normale moet je eerst het object instancieren");
+
+        System.out.println("Opdracht 10:");
+        System.out.println("Een static method kan worden aangeroepen zonder instance. Bij een normale moet je eerst het object instancieren");
 
     }
 }
