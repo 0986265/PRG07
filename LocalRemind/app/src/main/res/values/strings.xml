@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LocalRemind</string>
+    <string name="txt_currenttemp">0 °C</string>
+    <string name="txt_currentcity">Verwegistan</string>
+</resources>
