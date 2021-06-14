@@ -2,8 +2,10 @@ package com.jessestolk.localremind;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static String city = "Rotterdam";
     private final static String LOG_TAG = "LocalRemind";
-    private final static String WEATHERURI = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=TOKEN";
+    private final static String WEATHERURI = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=ce926d64e19684bdd8a952d1eb5d1ad4";
 
     public double currentTemp = 0.0;
     public String currentCity = "Verwegistan";
@@ -41,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
         getWeatherData();
 
 
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getWeatherData();
+        Log.d(LOG_TAG, "Language switch: " + SettingsActivity.dutchLanguage(this));
     }
 
     private void getWeatherData() {
@@ -87,5 +95,10 @@ public class MainActivity extends AppCompatActivity {
         double displayTemp = Math.round((currentTemp - 273) * 100.0) / 100.0;
         txt_currenttemp.setText(String.valueOf(displayTemp + "°C"));
         txt_currentcity.setText(currentCity);
+    }
+
+    public void openSettings(View view){
+        Intent i = new Intent(this, SettingsActivity.class);
+        startActivity(i);
     }
 }

@@ -43,4 +43,16 @@
         app:layout_constraintVertical_bias="0.976"
         app:srcCompat="@drawable/localremindlogo" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="45dp"
+        android:layout_height="56dp"
+        android:onClick="openSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
