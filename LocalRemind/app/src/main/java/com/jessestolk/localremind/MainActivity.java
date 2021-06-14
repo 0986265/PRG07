@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static String city = "Rotterdam";
     private final static String LOG_TAG = "LocalRemind";
-    private final static String WEATHERURI = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=ce926d64e19684bdd8a952d1eb5d1ad4";
+    private final static String WEATHERURI = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=TOKEN";
 
     public double currentTemp = 0.0;
     public String currentCity = "Verwegistan";
